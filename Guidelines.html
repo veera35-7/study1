@@ -555,6 +555,42 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
   .journey-strip{font-size:.66rem}
 }
 
+.price-amount {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 20px 0;
+}
+
+.price-amount .old-value {
+  color: #9299a6;
+  font-size: 17px;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.price-amount .value {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary, #2563eb);
+}
+
+.price-amount .unit {
+  font-size: 14px;
+  color: #777;
+}
+
+.discount-badge {
+  display: inline-block;
+  background: #e6f8ed;
+  color: #168344;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px 9px;
+  border-radius: 20px;
+}
+
 /* ============================================================
    6. GENERIC CARDS & GRIDS
    ============================================================ */
@@ -1832,10 +1868,12 @@ html{scroll-behavior:smooth}
         <h3 class="price-name">Career Foundation</h3>
         <p class="price-desc">For students beginning their career-development journey.</p>
 
-        <div class="price-amount">
-          <span class="value">₹1,500</span>
-          <span class="unit">/ Student</span>
-        </div>
+<div class="price-amount">
+  <span class="old-value">₹2,500</span>
+  <span class="value">₹1,500</span>
+  <span class="discount-badge">40% OFF</span>
+  <span class="unit">/ Student</span>
+</div>
 
         <ul class="price-features">
           <li><span class="tick" aria-hidden="true">✓</span> Career orientation</li>
@@ -1859,10 +1897,12 @@ html{scroll-behavior:smooth}
         <h3 class="price-name">Placement Ready</h3>
         <p class="price-desc">For students preparing for internships and placement opportunities.</p>
 
-        <div class="price-amount">
-          <span class="value">₹2,500</span>
-          <span class="unit">/ Student</span>
-        </div>
+<div class="price-amount">
+  <span class="old-value">₹4,500</span>
+  <span class="value">₹3,499</span>
+  <span class="discount-badge">22% OFF</span>
+  <span class="unit">/ Student</span>
+</div>
 
         <ul class="price-features">
           <li><span class="tick" aria-hidden="true">✓</span> Everything in Career Foundation</li>
@@ -1889,10 +1929,12 @@ html{scroll-behavior:smooth}
         <h3 class="price-name">Career Accelerator</h3>
         <p class="price-desc">A comprehensive career-development and mentoring program.</p>
 
-        <div class="price-amount">
-          <span class="value">₹4,000</span>
-          <span class="unit">/ Student</span>
-        </div>
+     <div class="price-amount">
+  <span class="old-value">₹7,500</span>
+  <span class="value">₹4,999</span>
+  <span class="discount-badge">33% OFF</span>
+  <span class="unit">/ Student</span>
+</div>
 
         <ul class="price-features">
           <li><span class="tick" aria-hidden="true">✓</span> Everything in Placement Ready</li>
